@@ -1,0 +1,14 @@
+name = uesp.lighttpd404thumbnail
+description = 
+repository = ?
+backup = false
+verbosity = 0
+
+staged = false
+
+ignore = *.deploy
+ignore = .hg*
+ignore = .git*
+
+dest = files1.uesp.net:/shared/uesp/wikiimages/php/
+
