@@ -9,6 +9,8 @@ staged = false
 ignore = *.deploy
 ignore = .hg*
 ignore = .git*
+ignore = LICENSE*
+ignore = README*
 
 dest = files1.uesp.net:/shared/uesp/wikiimages/php/
 
