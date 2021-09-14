@@ -4,6 +4,7 @@ class CLighttpd404Thumbnail
 {
 	public $BASE_PATH = "/shared/uesp/wikiimages";
 	public $OUTPUT_EXTRA_INFO = false;
+	public $SAVE_IMAGES = true;
 	
 	
 	public function escape($str)
@@ -81,7 +82,7 @@ class CLighttpd404Thumbnail
 			
 			//error_log("New Thumb: $newThumbFile");
 			
-			if (!file_exists($newThumbFile))
+			if ($this->SAVE_IMAGES && !file_exists($newThumbFile))
 			{
 				$img->writeImage($newThumbFile);
 			}
